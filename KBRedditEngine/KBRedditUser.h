@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface KBRedditUser : NSObject
+@interface KBRedditUser : NSObject {
+    NSString *username;
+    NSString *password;
+    NSString *modhash;
+    NSString *cookieString;
+}
 
 @end
