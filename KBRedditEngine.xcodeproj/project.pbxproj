@@ -1,0 +1,241 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBC4225A144DD98E00025C0E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC42259144DD98E00025C0E /* Cocoa.framework */; };
+		FBC42264144DD98E00025C0E /* KBRedditEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC42263144DD98E00025C0E /* KBRedditEngine.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FBC42256144DD98E00025C0E /* libKBRedditEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKBRedditEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC42259144DD98E00025C0E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FBC4225C144DD98E00025C0E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FBC4225D144DD98E00025C0E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FBC4225E144DD98E00025C0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FBC42261144DD98E00025C0E /* KBRedditEngine-Prefix.pch */ = {isa = PBXFileReference; path = "KBRedditEngine-Prefix.pch"; sourceTree = "<group>"; };
+		FBC42262144DD98E00025C0E /* KBRedditEngine.h */ = {isa = PBXFileReference; path = KBRedditEngine.h; sourceTree = "<group>"; };
+		FBC42263144DD98E00025C0E /* KBRedditEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KBRedditEngine.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBC42253144DD98E00025C0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC4225A144DD98E00025C0E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBC4224B144DD98E00025C0E = {
+			isa = PBXGroup;
+			children = (
+				FBC4225F144DD98E00025C0E /* KBRedditEngine */,
+				FBC42258144DD98E00025C0E /* Frameworks */,
+				FBC42257144DD98E00025C0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBC42257144DD98E00025C0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBC42256144DD98E00025C0E /* libKBRedditEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBC42258144DD98E00025C0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBC42259144DD98E00025C0E /* Cocoa.framework */,
+				FBC4225B144DD98E00025C0E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBC4225B144DD98E00025C0E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBC4225C144DD98E00025C0E /* AppKit.framework */,
+				FBC4225D144DD98E00025C0E /* CoreData.framework */,
+				FBC4225E144DD98E00025C0E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FBC4225F144DD98E00025C0E /* KBRedditEngine */ = {
+			isa = PBXGroup;
+			children = (
+				FBC42262144DD98E00025C0E /* KBRedditEngine.h */,
+				FBC42263144DD98E00025C0E /* KBRedditEngine.m */,
+				FBC42260144DD98E00025C0E /* Supporting Files */,
+			);
+			path = KBRedditEngine;
+			sourceTree = "<group>";
+		};
+		FBC42260144DD98E00025C0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBC42261144DD98E00025C0E /* KBRedditEngine-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FBC42254144DD98E00025C0E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FBC42255144DD98E00025C0E /* KBRedditEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBC42267144DD98E00025C0E /* Build configuration list for PBXNativeTarget "KBRedditEngine" */;
+			buildPhases = (
+				FBC42252144DD98E00025C0E /* Sources */,
+				FBC42253144DD98E00025C0E /* Frameworks */,
+				FBC42254144DD98E00025C0E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KBRedditEngine;
+			productName = KBRedditEngine;
+			productReference = FBC42256144DD98E00025C0E /* libKBRedditEngine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBC4224D144DD98E00025C0E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = FBC42250144DD98E00025C0E /* Build configuration list for PBXProject "KBRedditEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FBC4224B144DD98E00025C0E;
+			productRefGroup = FBC42257144DD98E00025C0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBC42255144DD98E00025C0E /* KBRedditEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBC42252144DD98E00025C0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC42264144DD98E00025C0E /* KBRedditEngine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FBC42265144DD98E00025C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FBC42266144DD98E00025C0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FBC42268144DD98E00025C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KBRedditEngine/KBRedditEngine-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBC42269144DD98E00025C0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KBRedditEngine/KBRedditEngine-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBC42250144DD98E00025C0E /* Build configuration list for PBXProject "KBRedditEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC42265144DD98E00025C0E /* Debug */,
+				FBC42266144DD98E00025C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBC42267144DD98E00025C0E /* Build configuration list for PBXNativeTarget "KBRedditEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC42268144DD98E00025C0E /* Debug */,
+				FBC42269144DD98E00025C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBC4224D144DD98E00025C0E /* Project object */;
+}
