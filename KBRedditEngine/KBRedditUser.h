@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface KBRedditUser : NSObject {
+#import "KBRedditBase.h"
+
+@interface KBRedditUser : KBRedditBase {
     NSString *username;
     NSString *password;
     NSString *modhash;
