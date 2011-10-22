@@ -8,13 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+#import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
+
 @interface KBRedditBase : NSObject {
     NSString *baseURL;
 }
 
 @property(copy) NSString *baseURL;
 
--(void) postWithDict;
--(void) getWithUrl;
-
+-(id) getRequestForPath:(NSString *)path andMethod:(NSString *)method;
 @end

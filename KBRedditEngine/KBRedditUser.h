@@ -17,4 +17,13 @@
     NSString *cookieString;
 }
 
+@property(copy) NSString *username, *password, *modhash, *cookieString;
+
+- (id) initWithUser:(NSString *)_user andPasswd:(NSString *)_passwd;
+
+- (void) login;
+
+//JSON Functions
+- (void) parseLoginResponse:(NSString *)response;
+
 @end

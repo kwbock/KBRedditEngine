@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface KBRedditEngine : NSObject
+#import "KBRedditUser.h"
+
+@interface KBRedditEngine : NSObject {
+    KBRedditUser *user;
+}
+
+@property(assign) KBRedditUser *user;
+
+- (id) initWithUser:(NSString *)user andPasswd:(NSString *)passwd;
 
 @end

@@ -18,10 +18,23 @@
 {
     self = [super init];
     if (self) {
-        baseURL = @"http://www.reddit.com/";
+        baseURL = @"http://www.reddit.com";
     }
     
     return self;
 }
 
+-(id) getRequestForPath:(NSString *)path andMethod:(NSString *)method
+{
+    ASIHTTPRequest *request;
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", self.baseURL, path]];
+    
+    NSLog(@"url: %@", url);
+    if (method == @"POST")
+        request = [ASIFormDataRequest requestWithURL:url];
+    else 
+        request = [ASIHTTPRequest requestWithURL:url];
+    
+    return request;
+}
 @end

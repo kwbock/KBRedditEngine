@@ -10,12 +10,25 @@
 
 @implementation KBRedditEngine
 
+@synthesize user;
+
 - (id)init
 {
     self = [super init];
+    
     if (self) {
-        // Initialization code here.
+        
     }
+    
+    return self;
+}
+
+- (id) initWithUser:(NSString *)_user andPasswd:(NSString *)_passwd
+{
+    [self init];
+    NSLog(@"KBRedditEngine initWithUser:andPasswd");
+    self.user = [[KBRedditUser alloc] initWithUser:_user andPasswd:_passwd];
+    [self.user login];
     
     return self;
 }
