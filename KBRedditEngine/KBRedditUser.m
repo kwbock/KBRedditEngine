@@ -66,6 +66,7 @@
     SBJsonParser *parser = [[SBJsonParser alloc] init];
     NSDictionary *dict = [parser objectWithString:response error:nil];
     
+    // path for key is in json style notation
     self.modhash = [dict valueForKeyPath:@"json.data.modhash"];
     self.cookieString = [dict valueForKeyPath:@"json.data.cookie"];
     
