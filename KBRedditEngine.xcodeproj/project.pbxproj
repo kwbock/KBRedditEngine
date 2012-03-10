@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBC4225A144DD98E00025C0E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC42259144DD98E00025C0E /* Cocoa.framework */; };
+		FBC42264144DD98E00025C0E /* KBRedditEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC42263144DD98E00025C0E /* KBRedditEngine.m */; };
+		FBC422D6144DDB5200025C0E /* KBRedditEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC42262144DD98E00025C0E /* KBRedditEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC422DB144DDBE600025C0E /* KBRedditUser.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC422D9144DDBE600025C0E /* KBRedditUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC422DC144DDBE600025C0E /* KBRedditUser.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC422DA144DDBE600025C0E /* KBRedditUser.m */; };
+		FBC422F8144DDCBA00025C0E /* NSObject+SBJson.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC422DF144DDCBA00025C0E /* NSObject+SBJson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC422F9144DDCBA00025C0E /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC422E0144DDCBA00025C0E /* NSObject+SBJson.m */; };
+		FBC422FA144DDCBA00025C0E /* SBJson.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC422E1144DDCBA00025C0E /* SBJson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC422FB144DDCBA00025C0E /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC422E2144DDCBA00025C0E /* SBJsonParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC422FC144DDCBA00025C0E /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC422E3144DDCBA00025C0E /* SBJsonParser.m */; };
+		FBC422FD144DDCBA00025C0E /* SBJsonStreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC422E4144DDCBA00025C0E /* SBJsonStreamParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC422FE144DDCBA00025C0E /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC422E5144DDCBA00025C0E /* SBJsonStreamParser.m */; };
+		FBC422FF144DDCBA00025C0E /* SBJsonStreamParserAccumulator.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC422E6144DDCBA00025C0E /* SBJsonStreamParserAccumulator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC42300144DDCBA00025C0E /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC422E7144DDCBA00025C0E /* SBJsonStreamParserAccumulator.m */; };
+		FBC42301144DDCBA00025C0E /* SBJsonStreamParserAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC422E8144DDCBA00025C0E /* SBJsonStreamParserAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC42302144DDCBA00025C0E /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC422E9144DDCBA00025C0E /* SBJsonStreamParserAdapter.m */; };
+		FBC42303144DDCBA00025C0E /* SBJsonStreamParserState.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC422EA144DDCBA00025C0E /* SBJsonStreamParserState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC42304144DDCBA00025C0E /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC422EB144DDCBA00025C0E /* SBJsonStreamParserState.m */; };
+		FBC42305144DDCBA00025C0E /* SBJsonStreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC422EC144DDCBA00025C0E /* SBJsonStreamWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC42306144DDCBA00025C0E /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC422ED144DDCBA00025C0E /* SBJsonStreamWriter.m */; };
+		FBC42307144DDCBA00025C0E /* SBJsonStreamWriterAccumulator.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC422EE144DDCBA00025C0E /* SBJsonStreamWriterAccumulator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC42308144DDCBA00025C0E /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC422EF144DDCBA00025C0E /* SBJsonStreamWriterAccumulator.m */; };
+		FBC42309144DDCBA00025C0E /* SBJsonStreamWriterState.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC422F0144DDCBA00025C0E /* SBJsonStreamWriterState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC4230A144DDCBA00025C0E /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC422F1144DDCBA00025C0E /* SBJsonStreamWriterState.m */; };
+		FBC4230B144DDCBA00025C0E /* SBJsonTokeniser.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC422F2144DDCBA00025C0E /* SBJsonTokeniser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC4230C144DDCBA00025C0E /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC422F3144DDCBA00025C0E /* SBJsonTokeniser.m */; };
+		FBC4230D144DDCBA00025C0E /* SBJsonUTF8Stream.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC422F4144DDCBA00025C0E /* SBJsonUTF8Stream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC4230E144DDCBA00025C0E /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC422F5144DDCBA00025C0E /* SBJsonUTF8Stream.m */; };
+		FBC4230F144DDCBA00025C0E /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC422F6144DDCBA00025C0E /* SBJsonWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC42310144DDCBA00025C0E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC422F7144DDCBA00025C0E /* SBJsonWriter.m */; };
+		FBC42324144DDCC500025C0E /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC42312144DDCC500025C0E /* ASICacheDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC42325144DDCC500025C0E /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC42313144DDCC500025C0E /* ASIDataCompressor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC42326144DDCC500025C0E /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC42314144DDCC500025C0E /* ASIDataCompressor.m */; };
+		FBC42327144DDCC500025C0E /* ASIDataDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC42315144DDCC500025C0E /* ASIDataDecompressor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC42328144DDCC500025C0E /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC42316144DDCC500025C0E /* ASIDataDecompressor.m */; };
+		FBC42329144DDCC500025C0E /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC42317144DDCC500025C0E /* ASIDownloadCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC4232A144DDCC500025C0E /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC42318144DDCC500025C0E /* ASIDownloadCache.m */; };
+		FBC4232B144DDCC500025C0E /* ASIFormDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC42319144DDCC500025C0E /* ASIFormDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC4232C144DDCC500025C0E /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC4231A144DDCC500025C0E /* ASIFormDataRequest.m */; };
+		FBC4232D144DDCC500025C0E /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC4231B144DDCC500025C0E /* ASIHTTPRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC4232E144DDCC500025C0E /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC4231C144DDCC500025C0E /* ASIHTTPRequest.m */; };
+		FBC4232F144DDCC500025C0E /* ASIHTTPRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC4231D144DDCC500025C0E /* ASIHTTPRequestConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC42330144DDCC500025C0E /* ASIHTTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC4231E144DDCC500025C0E /* ASIHTTPRequestDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC42331144DDCC500025C0E /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC4231F144DDCC500025C0E /* ASIInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC42332144DDCC500025C0E /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC42320144DDCC500025C0E /* ASIInputStream.m */; };
+		FBC42333144DDCC500025C0E /* ASINetworkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC42321144DDCC500025C0E /* ASINetworkQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC42334144DDCC500025C0E /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC42322144DDCC500025C0E /* ASINetworkQueue.m */; };
+		FBC42335144DDCC500025C0E /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC42323144DDCC500025C0E /* ASIProgressDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC4233B144DDD2C00025C0E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC4233A144DDD2C00025C0E /* libz.dylib */; };
+		FBC4233D144DDD4E00025C0E /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC4233C144DDD4E00025C0E /* CoreServices.framework */; };
+		FBC4233F144DDD6D00025C0E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC4233E144DDD6D00025C0E /* SystemConfiguration.framework */; };
+		FBC42342144DE1BD00025C0E /* KBRedditBase.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC42340144DE1BD00025C0E /* KBRedditBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC42343144DE1BD00025C0E /* KBRedditBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC42341144DE1BD00025C0E /* KBRedditBase.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FBC42256144DD98E00025C0E /* libKBRedditEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKBRedditEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC42259144DD98E00025C0E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FBC4225C144DD98E00025C0E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FBC4225D144DD98E00025C0E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FBC4225E144DD98E00025C0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FBC42261144DD98E00025C0E /* KBRedditEngine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KBRedditEngine-Prefix.pch"; sourceTree = "<group>"; };
+		FBC42262144DD98E00025C0E /* KBRedditEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KBRedditEngine.h; sourceTree = "<group>"; };
+		FBC42263144DD98E00025C0E /* KBRedditEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KBRedditEngine.m; sourceTree = "<group>"; };
+		FBC422D9144DDBE600025C0E /* KBRedditUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBRedditUser.h; sourceTree = "<group>"; };
+		FBC422DA144DDBE600025C0E /* KBRedditUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBRedditUser.m; sourceTree = "<group>"; };
+		FBC422DF144DDCBA00025C0E /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		FBC422E0144DDCBA00025C0E /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		FBC422E1144DDCBA00025C0E /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		FBC422E2144DDCBA00025C0E /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		FBC422E3144DDCBA00025C0E /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		FBC422E4144DDCBA00025C0E /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		FBC422E5144DDCBA00025C0E /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		FBC422E6144DDCBA00025C0E /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		FBC422E7144DDCBA00025C0E /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		FBC422E8144DDCBA00025C0E /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		FBC422E9144DDCBA00025C0E /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		FBC422EA144DDCBA00025C0E /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		FBC422EB144DDCBA00025C0E /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		FBC422EC144DDCBA00025C0E /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		FBC422ED144DDCBA00025C0E /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		FBC422EE144DDCBA00025C0E /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		FBC422EF144DDCBA00025C0E /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		FBC422F0144DDCBA00025C0E /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		FBC422F1144DDCBA00025C0E /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		FBC422F2144DDCBA00025C0E /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		FBC422F3144DDCBA00025C0E /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		FBC422F4144DDCBA00025C0E /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		FBC422F5144DDCBA00025C0E /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		FBC422F6144DDCBA00025C0E /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		FBC422F7144DDCBA00025C0E /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		FBC42312144DDCC500025C0E /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		FBC42313144DDCC500025C0E /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		FBC42314144DDCC500025C0E /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		FBC42315144DDCC500025C0E /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		FBC42316144DDCC500025C0E /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		FBC42317144DDCC500025C0E /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		FBC42318144DDCC500025C0E /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		FBC42319144DDCC500025C0E /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		FBC4231A144DDCC500025C0E /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		FBC4231B144DDCC500025C0E /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		FBC4231C144DDCC500025C0E /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		FBC4231D144DDCC500025C0E /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		FBC4231E144DDCC500025C0E /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		FBC4231F144DDCC500025C0E /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		FBC42320144DDCC500025C0E /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		FBC42321144DDCC500025C0E /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		FBC42322144DDCC500025C0E /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		FBC42323144DDCC500025C0E /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		FBC4233A144DDD2C00025C0E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		FBC4233C144DDD4E00025C0E /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		FBC4233E144DDD6D00025C0E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FBC42340144DE1BD00025C0E /* KBRedditBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBRedditBase.h; sourceTree = "<group>"; };
+		FBC42341144DE1BD00025C0E /* KBRedditBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBRedditBase.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBC42253144DD98E00025C0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC4233F144DDD6D00025C0E /* SystemConfiguration.framework in Frameworks */,
+				FBC4233D144DDD4E00025C0E /* CoreServices.framework in Frameworks */,
+				FBC4233B144DDD2C00025C0E /* libz.dylib in Frameworks */,
+				FBC4225A144DD98E00025C0E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBC4224B144DD98E00025C0E = {
+			isa = PBXGroup;
+			children = (
+				FBC4233E144DDD6D00025C0E /* SystemConfiguration.framework */,
+				FBC4233C144DDD4E00025C0E /* CoreServices.framework */,
+				FBC4233A144DDD2C00025C0E /* libz.dylib */,
+				FBC4225F144DD98E00025C0E /* KBRedditEngine */,
+				FBC42258144DD98E00025C0E /* Frameworks */,
+				FBC42257144DD98E00025C0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBC42257144DD98E00025C0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBC42256144DD98E00025C0E /* libKBRedditEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBC42258144DD98E00025C0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBC42259144DD98E00025C0E /* Cocoa.framework */,
+				FBC4225B144DD98E00025C0E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBC4225B144DD98E00025C0E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBC4225C144DD98E00025C0E /* AppKit.framework */,
+				FBC4225D144DD98E00025C0E /* CoreData.framework */,
+				FBC4225E144DD98E00025C0E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FBC4225F144DD98E00025C0E /* KBRedditEngine */ = {
+			isa = PBXGroup;
+			children = (
+				FBC422DD144DDC3C00025C0E /* ThirdParty */,
+				FBC422D7144DDB6700025C0E /* Classes */,
+				FBC42260144DD98E00025C0E /* Supporting Files */,
+			);
+			path = KBRedditEngine;
+			sourceTree = "<group>";
+		};
+		FBC42260144DD98E00025C0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBC42261144DD98E00025C0E /* KBRedditEngine-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBC422D7144DDB6700025C0E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FBC42262144DD98E00025C0E /* KBRedditEngine.h */,
+				FBC42263144DD98E00025C0E /* KBRedditEngine.m */,
+				FBC422D9144DDBE600025C0E /* KBRedditUser.h */,
+				FBC422DA144DDBE600025C0E /* KBRedditUser.m */,
+				FBC42340144DE1BD00025C0E /* KBRedditBase.h */,
+				FBC42341144DE1BD00025C0E /* KBRedditBase.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		FBC422DD144DDC3C00025C0E /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				FBC42311144DDCC500025C0E /* ASIHTTP */,
+				FBC422DE144DDCBA00025C0E /* JSON */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		FBC422DE144DDCBA00025C0E /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				FBC422DF144DDCBA00025C0E /* NSObject+SBJson.h */,
+				FBC422E0144DDCBA00025C0E /* NSObject+SBJson.m */,
+				FBC422E1144DDCBA00025C0E /* SBJson.h */,
+				FBC422E2144DDCBA00025C0E /* SBJsonParser.h */,
+				FBC422E3144DDCBA00025C0E /* SBJsonParser.m */,
+				FBC422E4144DDCBA00025C0E /* SBJsonStreamParser.h */,
+				FBC422E5144DDCBA00025C0E /* SBJsonStreamParser.m */,
+				FBC422E6144DDCBA00025C0E /* SBJsonStreamParserAccumulator.h */,
+				FBC422E7144DDCBA00025C0E /* SBJsonStreamParserAccumulator.m */,
+				FBC422E8144DDCBA00025C0E /* SBJsonStreamParserAdapter.h */,
+				FBC422E9144DDCBA00025C0E /* SBJsonStreamParserAdapter.m */,
+				FBC422EA144DDCBA00025C0E /* SBJsonStreamParserState.h */,
+				FBC422EB144DDCBA00025C0E /* SBJsonStreamParserState.m */,
+				FBC422EC144DDCBA00025C0E /* SBJsonStreamWriter.h */,
+				FBC422ED144DDCBA00025C0E /* SBJsonStreamWriter.m */,
+				FBC422EE144DDCBA00025C0E /* SBJsonStreamWriterAccumulator.h */,
+				FBC422EF144DDCBA00025C0E /* SBJsonStreamWriterAccumulator.m */,
+				FBC422F0144DDCBA00025C0E /* SBJsonStreamWriterState.h */,
+				FBC422F1144DDCBA00025C0E /* SBJsonStreamWriterState.m */,
+				FBC422F2144DDCBA00025C0E /* SBJsonTokeniser.h */,
+				FBC422F3144DDCBA00025C0E /* SBJsonTokeniser.m */,
+				FBC422F4144DDCBA00025C0E /* SBJsonUTF8Stream.h */,
+				FBC422F5144DDCBA00025C0E /* SBJsonUTF8Stream.m */,
+				FBC422F6144DDCBA00025C0E /* SBJsonWriter.h */,
+				FBC422F7144DDCBA00025C0E /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		FBC42311144DDCC500025C0E /* ASIHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				FBC42312144DDCC500025C0E /* ASICacheDelegate.h */,
+				FBC42313144DDCC500025C0E /* ASIDataCompressor.h */,
+				FBC42314144DDCC500025C0E /* ASIDataCompressor.m */,
+				FBC42315144DDCC500025C0E /* ASIDataDecompressor.h */,
+				FBC42316144DDCC500025C0E /* ASIDataDecompressor.m */,
+				FBC42317144DDCC500025C0E /* ASIDownloadCache.h */,
+				FBC42318144DDCC500025C0E /* ASIDownloadCache.m */,
+				FBC42319144DDCC500025C0E /* ASIFormDataRequest.h */,
+				FBC4231A144DDCC500025C0E /* ASIFormDataRequest.m */,
+				FBC4231B144DDCC500025C0E /* ASIHTTPRequest.h */,
+				FBC4231C144DDCC500025C0E /* ASIHTTPRequest.m */,
+				FBC4231D144DDCC500025C0E /* ASIHTTPRequestConfig.h */,
+				FBC4231E144DDCC500025C0E /* ASIHTTPRequestDelegate.h */,
+				FBC4231F144DDCC500025C0E /* ASIInputStream.h */,
+				FBC42320144DDCC500025C0E /* ASIInputStream.m */,
+				FBC42321144DDCC500025C0E /* ASINetworkQueue.h */,
+				FBC42322144DDCC500025C0E /* ASINetworkQueue.m */,
+				FBC42323144DDCC500025C0E /* ASIProgressDelegate.h */,
+			);
+			path = ASIHTTP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FBC42254144DD98E00025C0E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC422D6144DDB5200025C0E /* KBRedditEngine.h in Headers */,
+				FBC422DB144DDBE600025C0E /* KBRedditUser.h in Headers */,
+				FBC422F8144DDCBA00025C0E /* NSObject+SBJson.h in Headers */,
+				FBC422FA144DDCBA00025C0E /* SBJson.h in Headers */,
+				FBC422FB144DDCBA00025C0E /* SBJsonParser.h in Headers */,
+				FBC422FD144DDCBA00025C0E /* SBJsonStreamParser.h in Headers */,
+				FBC422FF144DDCBA00025C0E /* SBJsonStreamParserAccumulator.h in Headers */,
+				FBC42301144DDCBA00025C0E /* SBJsonStreamParserAdapter.h in Headers */,
+				FBC42303144DDCBA00025C0E /* SBJsonStreamParserState.h in Headers */,
+				FBC42305144DDCBA00025C0E /* SBJsonStreamWriter.h in Headers */,
+				FBC42342144DE1BD00025C0E /* KBRedditBase.h in Headers */,
+				FBC42307144DDCBA00025C0E /* SBJsonStreamWriterAccumulator.h in Headers */,
+				FBC42309144DDCBA00025C0E /* SBJsonStreamWriterState.h in Headers */,
+				FBC4230B144DDCBA00025C0E /* SBJsonTokeniser.h in Headers */,
+				FBC4230D144DDCBA00025C0E /* SBJsonUTF8Stream.h in Headers */,
+				FBC4230F144DDCBA00025C0E /* SBJsonWriter.h in Headers */,
+				FBC42324144DDCC500025C0E /* ASICacheDelegate.h in Headers */,
+				FBC42325144DDCC500025C0E /* ASIDataCompressor.h in Headers */,
+				FBC42327144DDCC500025C0E /* ASIDataDecompressor.h in Headers */,
+				FBC42329144DDCC500025C0E /* ASIDownloadCache.h in Headers */,
+				FBC4232B144DDCC500025C0E /* ASIFormDataRequest.h in Headers */,
+				FBC4232D144DDCC500025C0E /* ASIHTTPRequest.h in Headers */,
+				FBC4232F144DDCC500025C0E /* ASIHTTPRequestConfig.h in Headers */,
+				FBC42330144DDCC500025C0E /* ASIHTTPRequestDelegate.h in Headers */,
+				FBC42331144DDCC500025C0E /* ASIInputStream.h in Headers */,
+				FBC42333144DDCC500025C0E /* ASINetworkQueue.h in Headers */,
+				FBC42335144DDCC500025C0E /* ASIProgressDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FBC42255144DD98E00025C0E /* KBRedditEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBC42267144DD98E00025C0E /* Build configuration list for PBXNativeTarget "KBRedditEngine" */;
+			buildPhases = (
+				FBC42252144DD98E00025C0E /* Sources */,
+				FBC42253144DD98E00025C0E /* Frameworks */,
+				FBC42254144DD98E00025C0E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KBRedditEngine;
+			productName = KBRedditEngine;
+			productReference = FBC42256144DD98E00025C0E /* libKBRedditEngine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBC4224D144DD98E00025C0E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = FBC42250144DD98E00025C0E /* Build configuration list for PBXProject "KBRedditEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FBC4224B144DD98E00025C0E;
+			productRefGroup = FBC42257144DD98E00025C0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBC42255144DD98E00025C0E /* KBRedditEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBC42252144DD98E00025C0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC42264144DD98E00025C0E /* KBRedditEngine.m in Sources */,
+				FBC422DC144DDBE600025C0E /* KBRedditUser.m in Sources */,
+				FBC422F9144DDCBA00025C0E /* NSObject+SBJson.m in Sources */,
+				FBC422FC144DDCBA00025C0E /* SBJsonParser.m in Sources */,
+				FBC422FE144DDCBA00025C0E /* SBJsonStreamParser.m in Sources */,
+				FBC42300144DDCBA00025C0E /* SBJsonStreamParserAccumulator.m in Sources */,
+				FBC42302144DDCBA00025C0E /* SBJsonStreamParserAdapter.m in Sources */,
+				FBC42304144DDCBA00025C0E /* SBJsonStreamParserState.m in Sources */,
+				FBC42306144DDCBA00025C0E /* SBJsonStreamWriter.m in Sources */,
+				FBC42308144DDCBA00025C0E /* SBJsonStreamWriterAccumulator.m in Sources */,
+				FBC4230A144DDCBA00025C0E /* SBJsonStreamWriterState.m in Sources */,
+				FBC4230C144DDCBA00025C0E /* SBJsonTokeniser.m in Sources */,
+				FBC4230E144DDCBA00025C0E /* SBJsonUTF8Stream.m in Sources */,
+				FBC42310144DDCBA00025C0E /* SBJsonWriter.m in Sources */,
+				FBC42326144DDCC500025C0E /* ASIDataCompressor.m in Sources */,
+				FBC42328144DDCC500025C0E /* ASIDataDecompressor.m in Sources */,
+				FBC4232A144DDCC500025C0E /* ASIDownloadCache.m in Sources */,
+				FBC4232C144DDCC500025C0E /* ASIFormDataRequest.m in Sources */,
+				FBC4232E144DDCC500025C0E /* ASIHTTPRequest.m in Sources */,
+				FBC42332144DDCC500025C0E /* ASIInputStream.m in Sources */,
+				FBC42334144DDCC500025C0E /* ASINetworkQueue.m in Sources */,
+				FBC42343144DE1BD00025C0E /* KBRedditBase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FBC42265144DD98E00025C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FBC42266144DD98E00025C0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FBC42268144DD98E00025C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KBRedditEngine/KBRedditEngine-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBC42269144DD98E00025C0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KBRedditEngine/KBRedditEngine-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBC42250144DD98E00025C0E /* Build configuration list for PBXProject "KBRedditEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC42265144DD98E00025C0E /* Debug */,
+				FBC42266144DD98E00025C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBC42267144DD98E00025C0E /* Build configuration list for PBXNativeTarget "KBRedditEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC42268144DD98E00025C0E /* Debug */,
+				FBC42269144DD98E00025C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBC4224D144DD98E00025C0E /* Project object */;
+}
