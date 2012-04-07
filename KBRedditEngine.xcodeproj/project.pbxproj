@@ -62,6 +62,18 @@
 		FBC42343144DE1BD00025C0E /* KBRedditBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC42341144DE1BD00025C0E /* KBRedditBase.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		27EDED2A152FA6F0004F5DB8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		FBC42256144DD98E00025C0E /* libKBRedditEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKBRedditEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC42259144DD98E00025C0E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -321,6 +333,7 @@
 				FBC42252144DD98E00025C0E /* Sources */,
 				FBC42253144DD98E00025C0E /* Frameworks */,
 				FBC42254144DD98E00025C0E /* Headers */,
+				27EDED2A152FA6F0004F5DB8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
