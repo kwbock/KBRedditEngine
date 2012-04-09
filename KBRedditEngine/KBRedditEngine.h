@@ -14,7 +14,7 @@
     KBRedditUser *user;
 }
 
-@property(assign) KBRedditUser *user;
+@property KBRedditUser *user;
 
 - (id) initWithUser:(NSString *)user andPasswd:(NSString *)passwd;
 

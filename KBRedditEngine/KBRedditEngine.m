@@ -25,7 +25,7 @@
 
 - (id) initWithUser:(NSString *)_user andPasswd:(NSString *)_passwd
 {
-    [self init];
+    self = [self init];
     NSLog(@"KBRedditEngine initWithUser:andPasswd");
     self.user = [[KBRedditUser alloc] initWithUser:_user andPasswd:_passwd];
     [self.user login];

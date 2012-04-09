@@ -22,7 +22,7 @@
 - (id) initWithUser:(NSString *)_user andPasswd:(NSString *)_passwd;
 
 - (void) login;
-
+- (NSMutableDictionary*)getSubscribedReddits;
 //JSON Functions
 - (void) parseLoginResponse:(NSString *)response;
 
